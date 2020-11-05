@@ -19,6 +19,6 @@ public class JokesController {
     String getJoke(Model model) {
         String joke = jokesService.getJoke();
         model.addAttribute("joke", joke);
-        return "index";
+        return "chucknorris";
     }
 }
