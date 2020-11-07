@@ -7,16 +7,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@ImportResource({"classpath*:applicationContext.xml"})
 public class App {
 
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 	}
 
-//	@Bean
-//	ChuckNorrisQuotes chuckNorrisQuotes() {
-//		return new ChuckNorrisQuotes();
-//	}
+	@Bean
+	ChuckNorrisQuotes chuckNorrisQuotes() {
+		return new ChuckNorrisQuotes();
+	}
 
 }
